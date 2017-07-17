@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3D613457-B44D-3987-91D7-0A0E7F80DC58}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\opencv\opencv-2.4.13.2\modules\legacy\include;F:\opencv\opencv-2.4.13.2\modules\flann\include;F:\opencv\opencv-2.4.13.2\modules\features2d\include;F:\opencv\opencv-2.4.13.2\modules\video\include;F:\opencv\opencv-2.4.13.2\modules\calib3d\include;F:\opencv\opencv-2.4.13.2\modules\highgui\include;F:\opencv\opencv-2.4.13.2\modules\objdetect\include;F:\opencv\opencv-2.4.13.2\modules\imgproc\include;F:\opencv\opencv-2.4.13.2\modules\ml\include;F:\opencv\opencv-2.4.13.2\modules\core\include;F:\opencv\opencv-2.4.13.2\include\opencv;F:\opencv\opencv-2.4.13.2\apps\traincascade;F:\opencv\opencv-2.4.13.2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\opencv\opencv-2.4.13.2\modules\legacy\include;F:\opencv\opencv-2.4.13.2\modules\flann\include;F:\opencv\opencv-2.4.13.2\modules\features2d\include;F:\opencv\opencv-2.4.13.2\modules\video\include;F:\opencv\opencv-2.4.13.2\modules\calib3d\include;F:\opencv\opencv-2.4.13.2\modules\highgui\include;F:\opencv\opencv-2.4.13.2\modules\objdetect\include;F:\opencv\opencv-2.4.13.2\modules\imgproc\include;F:\opencv\opencv-2.4.13.2\modules\ml\include;F:\opencv\opencv-2.4.13.2\modules\core\include;F:\opencv\opencv-2.4.13.2\include\opencv;F:\opencv\opencv-2.4.13.2\apps\traincascade;F:\opencv\opencv-2.4.13.2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\apps\traincascade\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/opencv/opencv-2.4.13.2/apps/traincascade/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+F:\opencv\cmake-3.9.0-rc6-win64-x64\bin\cmake.exe -HF:/opencv/opencv-2.4.13.2 -BF:/opencv/opencv-2.4.13.2/build --check-stamp-file F:/opencv/opencv-2.4.13.2/build/apps/traincascade/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/opencv/opencv-2.4.13.2/apps/traincascade/CMakeLists.txt;F:\opencv\opencv-2.4.13.2\apps\traincascade\CMakeLists.txt;F:\opencv\opencv-2.4.13.2\apps\traincascade\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\opencv\opencv-2.4.13.2\build\apps\traincascade\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/opencv/opencv-2.4.13.2/apps/traincascade/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+F:\opencv\cmake-3.9.0-rc6-win64-x64\bin\cmake.exe -HF:/opencv/opencv-2.4.13.2 -BF:/opencv/opencv-2.4.13.2/build --check-stamp-file F:/opencv/opencv-2.4.13.2/build/apps/traincascade/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/opencv/opencv-2.4.13.2/apps/traincascade/CMakeLists.txt;F:\opencv\opencv-2.4.13.2\apps\traincascade\CMakeLists.txt;F:\opencv\opencv-2.4.13.2\apps\traincascade\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\opencv\opencv-2.4.13.2\build\apps\traincascade\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\ZERO_CHECK.vcxproj">
+      <Project>{35004BD5-AAE7-3261-94C8-803588267734}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\apps\traincascade\opencv_traincascade.vcxproj">
+      <Project>{345B27FD-183C-388F-BE27-609ED1287905}</Project>
+      <Name>opencv_traincascade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

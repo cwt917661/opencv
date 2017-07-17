@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+F:/opencv/opencv-2.4.13.2/3rdparty/zlib/CMakeLists.txt
+F:/opencv/cmake-3.9.0-rc6-win64-x64/share/cmake-3.9/Modules/CheckFunctionExists.cmake
+F:/opencv/cmake-3.9.0-rc6-win64-x64/share/cmake-3.9/Modules/CheckIncludeFile.cmake
+F:/opencv/cmake-3.9.0-rc6-win64-x64/share/cmake-3.9/Modules/CheckCSourceCompiles.cmake
+F:/opencv/cmake-3.9.0-rc6-win64-x64/share/cmake-3.9/Modules/CheckTypeSize.cmake
+F:/opencv/cmake-3.9.0-rc6-win64-x64/share/cmake-3.9/Modules/CheckIncludeFile.cmake
+F:/opencv/cmake-3.9.0-rc6-win64-x64/share/cmake-3.9/Modules/CheckIncludeFileCXX.cmake
+F:/opencv/cmake-3.9.0-rc6-win64-x64/share/cmake-3.9/Modules/CheckFunctionExists.c
+F:/opencv/cmake-3.9.0-rc6-win64-x64/share/cmake-3.9/Modules/CheckIncludeFile.c.in
+F:/opencv/cmake-3.9.0-rc6-win64-x64/share/cmake-3.9/Modules/CheckTypeSize.c.in
+F:/opencv/opencv-2.4.13.2/build/CMakeFiles/CheckTypeSize/OFF64_T.c
+F:/opencv/opencv-2.4.13.2/3rdparty/zlib/zconf.h.cmakein

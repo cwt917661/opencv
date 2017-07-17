@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EBD3FB2A-906B-3489-8624-66DE8B5D20E1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_test_ml</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\opencv\opencv-2.4.13.2\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_test_ml.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_test_mld</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\opencv\opencv-2.4.13.2\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_test_ml.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_test_ml</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\opencv\opencv-2.4.13.2\modules\ml\test;F:\opencv\opencv-2.4.13.2\modules\video\include;F:\opencv\opencv-2.4.13.2\modules\calib3d\include;F:\opencv\opencv-2.4.13.2\modules\features2d\include;F:\opencv\opencv-2.4.13.2\modules\highgui\include;F:\opencv\opencv-2.4.13.2\modules\imgproc\include;F:\opencv\opencv-2.4.13.2\modules\flann\include;F:\opencv\opencv-2.4.13.2\modules\core\include;F:\opencv\opencv-2.4.13.2\modules\ts\include;F:\opencv\opencv-2.4.13.2\modules\ml\include;F:\opencv\opencv-2.4.13.2\build\modules\ml;F:\opencv\opencv-2.4.13.2\modules\ml\src;F:\opencv\opencv-2.4.13.2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4275;4589;4359</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForcedIncludeFiles>F:/opencv/opencv-2.4.13.2/modules/ml/test/test_precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>F:/opencv/opencv-2.4.13.2/modules/ml/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <ProcessorNumber>8</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\opencv\opencv-2.4.13.2\modules\ml\test;F:\opencv\opencv-2.4.13.2\modules\video\include;F:\opencv\opencv-2.4.13.2\modules\calib3d\include;F:\opencv\opencv-2.4.13.2\modules\features2d\include;F:\opencv\opencv-2.4.13.2\modules\highgui\include;F:\opencv\opencv-2.4.13.2\modules\imgproc\include;F:\opencv\opencv-2.4.13.2\modules\flann\include;F:\opencv\opencv-2.4.13.2\modules\core\include;F:\opencv\opencv-2.4.13.2\modules\ts\include;F:\opencv\opencv-2.4.13.2\modules\ml\include;F:\opencv\opencv-2.4.13.2\build\modules\ml;F:\opencv\opencv-2.4.13.2\modules\ml\src;F:\opencv\opencv-2.4.13.2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\opencv\opencv-2.4.13.2\modules\ml\test;F:\opencv\opencv-2.4.13.2\modules\video\include;F:\opencv\opencv-2.4.13.2\modules\calib3d\include;F:\opencv\opencv-2.4.13.2\modules\features2d\include;F:\opencv\opencv-2.4.13.2\modules\highgui\include;F:\opencv\opencv-2.4.13.2\modules\imgproc\include;F:\opencv\opencv-2.4.13.2\modules\flann\include;F:\opencv\opencv-2.4.13.2\modules\core\include;F:\opencv\opencv-2.4.13.2\modules\ts\include;F:\opencv\opencv-2.4.13.2\modules\ml\include;F:\opencv\opencv-2.4.13.2\build\modules\ml;F:\opencv\opencv-2.4.13.2\modules\ml\src;F:\opencv\opencv-2.4.13.2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\opencv_ml2413d.lib;..\..\lib\Debug\opencv_ts2413d.lib;..\..\lib\Debug\opencv_calib3d2413d.lib;..\..\lib\Debug\opencv_video2413d.lib;..\..\lib\Debug\opencv_features2d2413d.lib;..\..\lib\Debug\opencv_highgui2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;..\..\lib\Debug\opencv_flann2413d.lib;..\..\lib\Debug\opencv_imgproc2413d.lib;..\..\lib\Debug\opencv_core2413d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/opencv/opencv-2.4.13.2/build/bin/Debug/opencv_test_mld.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/opencv/opencv-2.4.13.2/build/bin/Debug/opencv_test_mld.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\opencv\opencv-2.4.13.2\modules\ml\test;F:\opencv\opencv-2.4.13.2\modules\video\include;F:\opencv\opencv-2.4.13.2\modules\calib3d\include;F:\opencv\opencv-2.4.13.2\modules\features2d\include;F:\opencv\opencv-2.4.13.2\modules\highgui\include;F:\opencv\opencv-2.4.13.2\modules\imgproc\include;F:\opencv\opencv-2.4.13.2\modules\flann\include;F:\opencv\opencv-2.4.13.2\modules\core\include;F:\opencv\opencv-2.4.13.2\modules\ts\include;F:\opencv\opencv-2.4.13.2\modules\ml\include;F:\opencv\opencv-2.4.13.2\build\modules\ml;F:\opencv\opencv-2.4.13.2\modules\ml\src;F:\opencv\opencv-2.4.13.2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4275;4589;4359</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForcedIncludeFiles>F:/opencv/opencv-2.4.13.2/modules/ml/test/test_precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>F:/opencv/opencv-2.4.13.2/modules/ml/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <ProcessorNumber>8</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\opencv\opencv-2.4.13.2\modules\ml\test;F:\opencv\opencv-2.4.13.2\modules\video\include;F:\opencv\opencv-2.4.13.2\modules\calib3d\include;F:\opencv\opencv-2.4.13.2\modules\features2d\include;F:\opencv\opencv-2.4.13.2\modules\highgui\include;F:\opencv\opencv-2.4.13.2\modules\imgproc\include;F:\opencv\opencv-2.4.13.2\modules\flann\include;F:\opencv\opencv-2.4.13.2\modules\core\include;F:\opencv\opencv-2.4.13.2\modules\ts\include;F:\opencv\opencv-2.4.13.2\modules\ml\include;F:\opencv\opencv-2.4.13.2\build\modules\ml;F:\opencv\opencv-2.4.13.2\modules\ml\src;F:\opencv\opencv-2.4.13.2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\opencv\opencv-2.4.13.2\modules\ml\test;F:\opencv\opencv-2.4.13.2\modules\video\include;F:\opencv\opencv-2.4.13.2\modules\calib3d\include;F:\opencv\opencv-2.4.13.2\modules\features2d\include;F:\opencv\opencv-2.4.13.2\modules\highgui\include;F:\opencv\opencv-2.4.13.2\modules\imgproc\include;F:\opencv\opencv-2.4.13.2\modules\flann\include;F:\opencv\opencv-2.4.13.2\modules\core\include;F:\opencv\opencv-2.4.13.2\modules\ts\include;F:\opencv\opencv-2.4.13.2\modules\ml\include;F:\opencv\opencv-2.4.13.2\build\modules\ml;F:\opencv\opencv-2.4.13.2\modules\ml\src;F:\opencv\opencv-2.4.13.2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\opencv_ml2413.lib;..\..\lib\Release\opencv_ts2413.lib;..\..\lib\Release\opencv_calib3d2413.lib;..\..\lib\Release\opencv_video2413.lib;..\..\lib\Release\opencv_features2d2413.lib;..\..\lib\Release\opencv_highgui2413.lib;..\..\lib\Release\opencv_flann2413.lib;..\..\lib\Release\opencv_imgproc2413.lib;..\..\lib\Release\opencv_core2413.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/opencv/opencv-2.4.13.2/build/bin/Release/opencv_test_ml.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/opencv/opencv-2.4.13.2/build/bin/Release/opencv_test_ml.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\modules\ml\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/opencv/opencv-2.4.13.2/modules/ml/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+F:\opencv\cmake-3.9.0-rc6-win64-x64\bin\cmake.exe -HF:/opencv/opencv-2.4.13.2 -BF:/opencv/opencv-2.4.13.2/build --check-stamp-file F:/opencv/opencv-2.4.13.2/build/modules/ml/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/opencv/opencv-2.4.13.2/modules/ml/CMakeLists.txt;F:\opencv\opencv-2.4.13.2\modules\ml\CMakeLists.txt;F:\opencv\opencv-2.4.13.2\modules\ml\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\opencv\opencv-2.4.13.2\build\modules\ml\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/opencv/opencv-2.4.13.2/modules/ml/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+F:\opencv\cmake-3.9.0-rc6-win64-x64\bin\cmake.exe -HF:/opencv/opencv-2.4.13.2 -BF:/opencv/opencv-2.4.13.2/build --check-stamp-file F:/opencv/opencv-2.4.13.2/build/modules/ml/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/opencv/opencv-2.4.13.2/modules/ml/CMakeLists.txt;F:\opencv\opencv-2.4.13.2\modules\ml\CMakeLists.txt;F:\opencv\opencv-2.4.13.2\modules\ml\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\opencv\opencv-2.4.13.2\build\modules\ml\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\modules\ml\test\test_emknearestkmeans.cpp"  />
+    <ClCompile Include="..\..\..\modules\ml\test\test_gbttest.cpp"  />
+    <ClCompile Include="..\..\..\modules\ml\test\test_main.cpp"  />
+    <ClCompile Include="..\..\..\modules\ml\test\test_mltests.cpp"  />
+    <ClCompile Include="..\..\..\modules\ml\test\test_mltests2.cpp"  />
+    <ClCompile Include="..\..\..\modules\ml\test\test_save_load.cpp"  />
+    <ClInclude Include="..\..\..\modules\ml\test\test_precomp.hpp" />
+    <ClCompile Include="opencv_test_ml_pch.cpp" >
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/opencv/opencv-2.4.13.2/modules/ml/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/opencv/opencv-2.4.13.2/modules/ml/test/test_precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\ZERO_CHECK.vcxproj">
+      <Project>{35004BD5-AAE7-3261-94C8-803588267734}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\modules\calib3d\opencv_calib3d.vcxproj">
+      <Project>{90A79330-CF46-3192-A76D-71BF5A97EF31}</Project>
+      <Name>opencv_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\modules\core\opencv_core.vcxproj">
+      <Project>{8F43B03F-9CFE-3BDE-A077-2BD0FB103BB4}</Project>
+      <Name>opencv_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\modules\features2d\opencv_features2d.vcxproj">
+      <Project>{320A09AB-E4B1-3CBA-AB58-62C6FE3A4F00}</Project>
+      <Name>opencv_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\modules\flann\opencv_flann.vcxproj">
+      <Project>{DC7ACBDB-DCC9-3D49-B72D-2EACE2B7E25E}</Project>
+      <Name>opencv_flann</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\modules\highgui\opencv_highgui.vcxproj">
+      <Project>{FE580572-7D3A-3729-ACAD-1E8F9E84F2E2}</Project>
+      <Name>opencv_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{46C84B98-5F68-3694-BF7B-96370166E15B}</Project>
+      <Name>opencv_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\modules\ml\opencv_ml.vcxproj">
+      <Project>{B9D9BABD-0DCD-3750-9E7B-4E5CB60CCEF5}</Project>
+      <Name>opencv_ml</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\modules\ts\opencv_ts.vcxproj">
+      <Project>{842E0201-6B13-3057-B2C1-B79A8B3CF51E}</Project>
+      <Name>opencv_ts</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\opencv\opencv-2.4.13.2\build\modules\video\opencv_video.vcxproj">
+      <Project>{3169FD73-25F6-300C-9EEC-02F6F9866B90}</Project>
+      <Name>opencv_video</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
